@@ -9,11 +9,12 @@ document.querySelector('#app').innerHTML = `
     </header>
 
     <section class="hero" aria-labelledby="invitation-title">
-      <div class="sun" aria-hidden="true"><span>30</span><small>08 · 2026</small></div>
+      <div class="sun" aria-hidden="true"></div>
       <p class="eyebrow">A joyful celebration</p>
       <button class="name-seal" id="celebrate" type="button" aria-label="Celebrate Vishnu and Divyadharshni">
         <span class="name-line">Vishnu</span><i>&amp;</i><span class="name-line">Divyadharshni</span>
       </button>
+      <div class="ornament" aria-hidden="true"><span></span></div>
       <p class="hero-copy">Together with our families, we seek your presence and blessings as we begin our happily ever after.</p>
       <p class="hero-date">29 <small>August · Saturday</small> 30 <small>August · Sunday</small></p>
     </section>

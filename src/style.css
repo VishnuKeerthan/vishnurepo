@@ -29,10 +29,12 @@ footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5r
 .venue { background: var(--sage); }
 @media (max-width: 650px) { .topbar > p:nth-child(2) { max-width: 130px; line-height: 1.4; text-align: center; }.events { grid-template-columns: 1fr; } }
 .invitation::before, .invitation::after { display: none; }
-.sun { top: 12%; width: min(28vw, 300px); border: 0; opacity: .2; }
-.sun::before, .sun::after, .sun span, .sun small { display: none; }
-.name-seal { max-width: 850px; font-size: clamp(3.4rem, 9.5vw, 8rem); }
+.sun { display: none; }
+.name-seal { max-width: 850px; font-size: clamp(3rem, 7.2vw, 7.5rem); }
 .hero { isolation: isolate; }
+.ornament { display: flex; align-items: center; justify-content: center; width: min(80%, 380px); margin: 2rem auto 0; color: var(--sage); }
+.ornament::before, .ornament::after { width: 42%; height: 1px; content: ''; background: currentColor; }
+.ornament span { width: 10px; height: 10px; margin: 0 12px; border: 1px solid currentColor; transform: rotate(45deg); }
 @media (max-width: 650px) { .sun { width: 58vw; top: 15%; }.name-seal { font-size: clamp(2.9rem, 12.5vw, 5.5rem); } }
 .sun { top: 12%; width: min(38vw, 390px); opacity: .48; }
 .sun::before, .sun::after { display: none; }
