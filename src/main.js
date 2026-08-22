@@ -3,7 +3,6 @@ import './style.css'
 const couplePhotoUrl = `${import.meta.env.BASE_URL}couple-photo.jpg`
 
 document.querySelector('#app').innerHTML = `
-  <div class="splash" id="splash"><div class="splash-symbol">V &amp; D</div><p>Our favorite people, please join us</p><button id="enter" type="button">Open invitation <span>↗</span></button></div>
   <div class="petals" aria-hidden="true"></div>
   <main class="invitation">
     <header class="topbar">
@@ -58,8 +57,6 @@ document.querySelector('#app').innerHTML = `
     <footer><p>We cannot wait to celebrate with you.</p><p>Reception 29 August · Marriage 30 August 2026</p></footer>
   </main>
 `
-
-document.querySelector('#enter').addEventListener('click', () => document.querySelector('#splash').classList.add('is-hidden'))
 
 const petals = document.querySelector('.petals')
 for (let index = 0; index < 14; index += 1) {
