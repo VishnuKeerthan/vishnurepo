@@ -24,7 +24,6 @@ document.querySelector('#app').innerHTML = `
       </div>
       <div class="ornament" aria-hidden="true"><span></span></div>
       <p class="hero-copy">Together with our families, we seek your presence and blessings as we begin our happily ever after.</p>
-      <a class="scroll-cue" href="#celebration">Scroll to celebrate <span>↓</span></a>
     </section>
 
     <section class="countdown-section reveal" id="celebration" aria-labelledby="countdown-title"><p class="eyebrow">The big day is near</p><h2 id="countdown-title">Counting down to the party</h2><div class="countdown" id="countdown"><div><strong data-unit="days">00</strong><span>Days</span></div><div><strong data-unit="hours">00</strong><span>Hours</span></div><div><strong data-unit="minutes">00</strong><span>Minutes</span></div><div><strong data-unit="seconds">00</strong><span>Seconds</span></div></div></section>
