@@ -55,8 +55,6 @@ document.querySelector('#app').innerHTML = `
       <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Town+Panchayat+Marriage+Hall%2C+Kallidaikurichi%2C+Tirunelveli" target="_blank" rel="noreferrer">Open in Google Maps <span aria-hidden="true">↗</span></a>
     </section>
 
-    <section class="rsvp reveal" aria-labelledby="rsvp-title"><div><p class="eyebrow">Your presence means the world</p><h2 id="rsvp-title">Will you join us?</h2><p>Let us know so we can welcome you with joy.</p></div><form id="rsvp-form"><label>Your name<input name="name" required placeholder="Enter your name" /></label><label>Response<select name="response"><option>Joyfully accepts</option><option>Regretfully declines</option></select></label><button class="rsvp-button" type="submit">Send RSVP <span>↗</span></button></form></section>
-
     <footer><p>We cannot wait to celebrate with you.</p><p>Reception 29 August · Marriage 30 August 2026</p></footer>
   </main>
 `
@@ -87,12 +85,6 @@ window.setInterval(updateCountdown, 1000)
 
 const observer = new IntersectionObserver((entries) => entries.forEach((entry) => entry.isIntersecting && entry.target.classList.add('is-visible')), { threshold: .14 })
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element))
-
-document.querySelector('#rsvp-form').addEventListener('submit', (event) => {
-  event.preventDefault()
-  const formData = new FormData(event.currentTarget)
-  window.location.href = `mailto:?subject=RSVP for Vishnu and Divyadharshni&body=${encodeURIComponent(`${formData.get('name')} - ${formData.get('response')}`)}`
-})
 
 const celebrateButton = document.querySelector('#celebrate')
 
