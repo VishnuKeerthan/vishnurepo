@@ -16,7 +16,6 @@ document.querySelector('#app').innerHTML = `
       </button>
       <div class="ornament" aria-hidden="true"><span></span></div>
       <p class="hero-copy">Together with our families, we seek your presence and blessings as we begin our happily ever after.</p>
-      <p class="hero-date">29 <small>August · Saturday</small> 30 <small>August · Sunday</small></p>
     </section>
 
     <section class="events" aria-label="Wedding events">
