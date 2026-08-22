@@ -11,9 +11,13 @@ document.querySelector('#app').innerHTML = `
     <section class="hero" aria-labelledby="invitation-title">
       <div class="sun" aria-hidden="true"></div>
       <p class="eyebrow">A joyful celebration</p>
-      <button class="name-seal" id="celebrate" type="button" aria-label="Celebrate Vishnu and Divyadharshni">
-        <span class="name-line">Vishnu</span><i>&amp;</i><span class="name-line">Divyadharshni</span>
-      </button>
+      <div class="photo-stage">
+        <img src="./couple-photo.jpg" alt="Vishnu and Divyadharshni walking together on a beach" />
+        <div class="photo-wash" aria-hidden="true"></div>
+        <button class="name-seal" id="celebrate" type="button" aria-label="Celebrate Vishnu and Divyadharshni">
+          <span class="name-line">Vishnu</span><i>&amp;</i><span class="name-line">Divyadharshni</span>
+        </button>
+      </div>
       <div class="ornament" aria-hidden="true"><span></span></div>
       <p class="hero-copy">Together with our families, we seek your presence and blessings as we begin our happily ever after.</p>
     </section>
