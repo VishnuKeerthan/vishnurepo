@@ -82,6 +82,14 @@ footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5r
 .countdown-section .countdown strong { color: #d8f0ed; font-family: 'Trebuchet MS', sans-serif; font-size: clamp(1.45rem, 4vw, 2.4rem); font-weight: 700; }
 .countdown-section .countdown span { color: #a9d9dc; font-family: 'Trebuchet MS', sans-serif; font-size: .58rem; letter-spacing: .12em; text-transform: uppercase; }
 @media (max-width: 650px) { .countdown-section .countdown { gap: .8rem; }.countdown-section .countdown div { display: grid; gap: .2rem; text-align: center; }.countdown-section .countdown strong { font-size: 1.35rem; }.countdown-section .countdown span { font-size: .46rem; } }
+.countdown-section { background: transparent; color: #0f4c5c; }
+.countdown-section h2 { color: #0f4c5c; }
+.countdown-section .countdown { display: flex; position: static; align-items: baseline; justify-content: center; gap: .8rem; width: auto; margin: 1rem auto 0; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.countdown-section .countdown div { display: inline-flex; align-items: baseline; gap: .3rem; }
+.countdown-section .countdown div:not(:last-child)::after { margin-left: .5rem; color: #2d8c9d; content: '·'; }
+.countdown-section .countdown strong { color: #0f4c5c; font-size: clamp(1.25rem, 3vw, 2rem); font-weight: 700; }
+.countdown-section .countdown span { color: #477781; font-size: .58rem; }
+@media (max-width: 650px) { .countdown-section { padding: 1.5rem 1rem; }.countdown-section h2 { font-size: 1.25rem; }.countdown-section .countdown { gap: .25rem; }.countdown-section .countdown div { gap: .18rem; }.countdown-section .countdown div:not(:last-child)::after { margin-left: .18rem; }.countdown-section .countdown strong { font-size: 1rem; }.countdown-section .countdown span { font-size: .45rem; } }
 .petals span { width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle at 50% 50%, #ffd700 0 14%, transparent 15%), radial-gradient(circle at 50% 0, #d95d62 0 34%, transparent 36%), radial-gradient(circle at 100% 50%, #e98d64 0 34%, transparent 36%), radial-gradient(circle at 50% 100%, #d95d62 0 34%, transparent 36%), radial-gradient(circle at 0 50%, #e98d64 0 34%, transparent 36%); }
 :root { --forest: #0f4c5c; --sage: #a9d9dc; --terracotta: #2d8c9d; --cream: #f3fbfa; --paper: #d8f0ed; color: #164653; background: #f3fbfa; }
 body { background: linear-gradient(145deg, #f3fbfa 0%, #e5f4f2 48%, #c8e8e9 100%); }
