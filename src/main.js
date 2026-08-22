@@ -1,5 +1,7 @@
 import './style.css'
 
+const couplePhotoUrl = `${import.meta.env.BASE_URL}couple-photo.jpg`
+
 document.querySelector('#app').innerHTML = `
   <main class="invitation">
     <header class="topbar">
@@ -12,7 +14,7 @@ document.querySelector('#app').innerHTML = `
       <div class="sun" aria-hidden="true"></div>
       <p class="eyebrow">A joyful celebration</p>
       <div class="photo-stage">
-        <img src="./couple-photo.jpg" alt="Vishnu and Divyadharshni walking together on a beach" />
+        <img src="${couplePhotoUrl}" alt="Vishnu and Divyadharshni walking together on a beach" />
         <div class="photo-wash" aria-hidden="true"></div>
         <button class="name-seal" id="celebrate" type="button" aria-label="Celebrate Vishnu and Divyadharshni">
           <span class="name-line">Vishnu</span><i>&amp;</i><span class="name-line">Divyadharshni</span>
