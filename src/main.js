@@ -6,7 +6,7 @@ document.querySelector('#app').innerHTML = `
   <div class="petals" aria-hidden="true"></div>
   <main class="invitation">
     <header class="topbar">
-      <p class="om-mark">V <span>&amp;</span> D</p>
+      <p class="om-mark">V &<span></span> D</p>
       <p>Come celebrate with us</p>
       <p class="monogram">2026</p>
     </header>

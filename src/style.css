@@ -97,6 +97,14 @@ footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5r
 .countdown-section .countdown-item strong { color: #0f4c5c; font-size: clamp(1.1rem, 3vw, 1.8rem); }
 .countdown-section .countdown-divider { display: inline; margin: 0 .45rem; color: #2d8c9d; }
 @media (max-width: 650px) { .countdown-section .countdown { font-size: .6rem; }.countdown-section .countdown-item strong { font-size: 1rem; }.countdown-section .countdown-divider { margin: 0 .2rem; } }
+.events { gap: 1rem; padding: 1.2rem 0; border: 0; }
+.event { min-height: 0; padding: 1.4rem 1rem; border: 1px solid rgba(15, 76, 92, .16); border-radius: 8px; box-shadow: 0 8px 20px rgba(15, 76, 92, .08); }
+.event + .event { border-left: 1px solid rgba(15, 76, 92, .16); }
+.event-icon { display: block; margin-bottom: .7rem; font-size: 1.15rem; }
+.event-label { margin-bottom: .55rem; font-size: .55rem; }
+.event h2 { margin-bottom: .55rem; font-size: clamp(1.35rem, 2.4vw, 2rem); }
+.event-date { font-size: .82rem; }.event-time { margin-top: .4rem; font-size: .58rem; }
+@media (max-width: 650px) { .events { gap: .7rem; padding: 1rem 0; }.event { padding: 1.2rem .8rem; }.event + .event { border-left: 1px solid rgba(15, 76, 92, .16); } }
 .petals span { background: radial-gradient(circle at 50% 50%, #ffd36a 0 14%, transparent 15%), radial-gradient(circle at 50% 0, #9d2449 0 34%, transparent 36%), radial-gradient(circle at 100% 50%, #d75b61 0 34%, transparent 36%), radial-gradient(circle at 50% 100%, #9d2449 0 34%, transparent 36%), radial-gradient(circle at 0 50%, #d75b61 0 34%, transparent 36%); }
 @media (max-width: 650px) { .hero .eyebrow { font-size: .78rem; }.hero-copy { font-size: 1.08rem; }.tamil-line { font-size: 1.05rem; } }
 .petals span { width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle at 50% 50%, #ffd700 0 14%, transparent 15%), radial-gradient(circle at 50% 0, #d95d62 0 34%, transparent 36%), radial-gradient(circle at 100% 50%, #e98d64 0 34%, transparent 36%), radial-gradient(circle at 50% 100%, #d95d62 0 34%, transparent 36%), radial-gradient(circle at 0 50%, #e98d64 0 34%, transparent 36%); }
