@@ -3,13 +3,13 @@ import './style.css'
 const couplePhotoUrl = `${import.meta.env.BASE_URL}couple-photo.jpg`
 
 document.querySelector('#app').innerHTML = `
-  <div class="splash" id="splash"><div class="splash-symbol">ॐ</div><p>With divine blessings</p><button id="enter" type="button">Open invitation <span>↗</span></button></div>
+  <div class="splash" id="splash"><div class="splash-symbol">V &amp; D</div><p>Our favorite people, please join us</p><button id="enter" type="button">Open invitation <span>↗</span></button></div>
   <div class="petals" aria-hidden="true"></div>
   <main class="invitation">
     <header class="topbar">
-      <p class="om-mark">ॐ</p>
-      <p>With love and blessings</p>
-      <p class="monogram">V <span>&amp;</span> D</p>
+      <p class="om-mark">V <span>&amp;</span> D</p>
+      <p>Come celebrate with us</p>
+      <p class="monogram">2026</p>
     </header>
 
     <section class="hero reveal" aria-labelledby="invitation-title">
@@ -27,7 +27,7 @@ document.querySelector('#app').innerHTML = `
       <a class="scroll-cue" href="#celebration">Scroll to celebrate <span>↓</span></a>
     </section>
 
-    <section class="countdown-section reveal" id="celebration" aria-labelledby="countdown-title"><p class="eyebrow">The auspicious day is near</p><h2 id="countdown-title">Counting down to forever</h2><div class="countdown" id="countdown"><div><strong data-unit="days">00</strong><span>Days</span></div><div><strong data-unit="hours">00</strong><span>Hours</span></div><div><strong data-unit="minutes">00</strong><span>Minutes</span></div><div><strong data-unit="seconds">00</strong><span>Seconds</span></div></div></section>
+    <section class="countdown-section reveal" id="celebration" aria-labelledby="countdown-title"><p class="eyebrow">The big day is near</p><h2 id="countdown-title">Counting down to the party</h2><div class="countdown" id="countdown"><div><strong data-unit="days">00</strong><span>Days</span></div><div><strong data-unit="hours">00</strong><span>Hours</span></div><div><strong data-unit="minutes">00</strong><span>Minutes</span></div><div><strong data-unit="seconds">00</strong><span>Seconds</span></div></div></section>
 
     <section class="events reveal" aria-label="Wedding events">
       <article class="event betrothal">
