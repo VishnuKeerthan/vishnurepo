@@ -93,6 +93,11 @@ footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5r
 .countdown-section .countdown strong { color: #0f4c5c; font-size: clamp(1.25rem, 3vw, 2rem); font-weight: 700; }
 .countdown-section .countdown span { color: #477781; font-size: .58rem; }
 @media (max-width: 650px) { .countdown-section { padding: 1.5rem 1rem; }.countdown-section h2 { font-size: 1.25rem; }.countdown-section .countdown { gap: .25rem; }.countdown-section .countdown div { gap: .18rem; }.countdown-section .countdown div:not(:last-child)::after { margin-left: .18rem; }.countdown-section .countdown strong { font-size: 1rem; }.countdown-section .countdown span { font-size: .45rem; } }
+.countdown-section .countdown { display: block; white-space: nowrap; font-family: 'Trebuchet MS', sans-serif; font-size: clamp(.72rem, 2vw, 1rem); letter-spacing: .04em; }
+.countdown-section .countdown-item { display: inline; color: #477781; }
+.countdown-section .countdown-item strong { color: #0f4c5c; font-size: clamp(1.1rem, 3vw, 1.8rem); }
+.countdown-section .countdown-divider { display: inline; margin: 0 .45rem; color: #2d8c9d; }
+@media (max-width: 650px) { .countdown-section .countdown { font-size: .6rem; }.countdown-section .countdown-item strong { font-size: 1rem; }.countdown-section .countdown-divider { margin: 0 .2rem; } }
 @media (max-width: 650px) { .hero .eyebrow { font-size: .78rem; }.hero-copy { font-size: 1.08rem; }.tamil-line { font-size: 1.05rem; } }
 .petals span { width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle at 50% 50%, #ffd700 0 14%, transparent 15%), radial-gradient(circle at 50% 0, #d95d62 0 34%, transparent 36%), radial-gradient(circle at 100% 50%, #e98d64 0 34%, transparent 36%), radial-gradient(circle at 50% 100%, #d95d62 0 34%, transparent 36%), radial-gradient(circle at 0 50%, #e98d64 0 34%, transparent 36%); }
 :root { --forest: #0f4c5c; --sage: #a9d9dc; --terracotta: #2d8c9d; --cream: #f3fbfa; --paper: #d8f0ed; color: #164653; background: #f3fbfa; }
