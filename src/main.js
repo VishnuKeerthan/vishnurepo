@@ -26,7 +26,7 @@ document.querySelector('#app').innerHTML = `
       <p class="tamil-line">அவளும் நானும்</p>
     </section>
 
-    <section class="countdown-line reveal" aria-label="Countdown to the wedding"><span class="eyebrow">Until the big day</span><span class="countdown" id="countdown"><strong data-unit="days">00</strong><small>days</small><b>:</b><strong data-unit="hours">00</strong><small>hours</small><b>:</b><strong data-unit="minutes">00</strong><small>min</small><b>:</b><strong data-unit="seconds">00</strong><small>sec</small></span></section>
+    <section class="countdown-line reveal" aria-label="Countdown to the wedding"><span class="eyebrow">Counting the moments until we celebrate</span><span class="countdown" id="countdown"><strong data-unit="days">00</strong><small>days</small><b>:</b><strong data-unit="hours">00</strong><small>hours</small><b>:</b><strong data-unit="minutes">00</strong><small>min</small><b>:</b><strong data-unit="seconds">00</strong><small>sec</small></span></section>
 
     <section class="events reveal" aria-label="Wedding events">
       <article class="event betrothal">
