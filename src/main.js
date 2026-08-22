@@ -3,6 +3,8 @@ import './style.css'
 const couplePhotoUrl = `${import.meta.env.BASE_URL}couple-photo.jpg`
 
 document.querySelector('#app').innerHTML = `
+  <div class="splash" id="splash"><div class="splash-symbol">ॐ</div><p>With divine blessings</p><button id="enter" type="button">Open invitation <span>↗</span></button></div>
+  <div class="petals" aria-hidden="true"></div>
   <main class="invitation">
     <header class="topbar">
       <p class="om-mark">ॐ</p>
@@ -10,7 +12,7 @@ document.querySelector('#app').innerHTML = `
       <p class="monogram">V <span>&amp;</span> D</p>
     </header>
 
-    <section class="hero" aria-labelledby="invitation-title">
+    <section class="hero reveal" aria-labelledby="invitation-title">
       <div class="sun" aria-hidden="true"></div>
       <p class="eyebrow">A joyful celebration</p>
       <div class="photo-stage">
@@ -22,9 +24,12 @@ document.querySelector('#app').innerHTML = `
       </div>
       <div class="ornament" aria-hidden="true"><span></span></div>
       <p class="hero-copy">Together with our families, we seek your presence and blessings as we begin our happily ever after.</p>
+      <a class="scroll-cue" href="#celebration">Scroll to celebrate <span>↓</span></a>
     </section>
 
-    <section class="events" aria-label="Wedding events">
+    <section class="countdown-section reveal" id="celebration" aria-labelledby="countdown-title"><p class="eyebrow">The auspicious day is near</p><h2 id="countdown-title">Counting down to forever</h2><div class="countdown" id="countdown"><div><strong data-unit="days">00</strong><span>Days</span></div><div><strong data-unit="hours">00</strong><span>Hours</span></div><div><strong data-unit="minutes">00</strong><span>Minutes</span></div><div><strong data-unit="seconds">00</strong><span>Seconds</span></div></div></section>
+
+    <section class="events reveal" aria-label="Wedding events">
       <article class="event betrothal">
         <p class="event-label">Betrothal</p>
         <h2>29.08.2026</h2>
@@ -45,14 +50,49 @@ document.querySelector('#app').innerHTML = `
       </article>
     </section>
 
-    <section class="venue" aria-labelledby="venue-title">
+    <section class="venue reveal" aria-labelledby="venue-title">
       <div><p class="eyebrow">Please join us</p><h2 id="venue-title">Town Panchayat<br />Marriage Hall</h2><p>Kallidaikurichi, Tirunelveli</p></div>
       <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Town+Panchayat+Marriage+Hall%2C+Kallidaikurichi%2C+Tirunelveli" target="_blank" rel="noreferrer">Open in Google Maps <span aria-hidden="true">↗</span></a>
     </section>
 
+    <section class="rsvp reveal" aria-labelledby="rsvp-title"><div><p class="eyebrow">Your presence means the world</p><h2 id="rsvp-title">Will you join us?</h2><p>Let us know so we can welcome you with joy.</p></div><form id="rsvp-form"><label>Your name<input name="name" required placeholder="Enter your name" /></label><label>Response<select name="response"><option>Joyfully accepts</option><option>Regretfully declines</option></select></label><button class="rsvp-button" type="submit">Send RSVP <span>↗</span></button></form></section>
+
     <footer><p>We cannot wait to celebrate with you.</p><p>Reception 29 August · Marriage 30 August 2026</p></footer>
   </main>
 `
+
+document.querySelector('#enter').addEventListener('click', () => document.querySelector('#splash').classList.add('is-hidden'))
+
+const petals = document.querySelector('.petals')
+for (let index = 0; index < 14; index += 1) {
+  const petal = document.createElement('span')
+  petal.style.setProperty('--left', `${Math.random() * 100}%`)
+  petal.style.setProperty('--delay', `${Math.random() * 8}s`)
+  petal.style.setProperty('--duration', `${9 + Math.random() * 7}s`)
+  petals.append(petal)
+}
+
+const target = new Date('2026-08-30T08:00:00+05:30').getTime()
+const updateCountdown = () => {
+  let remaining = Math.max(0, target - Date.now())
+  const units = { days: 86400000, hours: 3600000, minutes: 60000, seconds: 1000 }
+  Object.entries(units).forEach(([unit, duration]) => {
+    const value = Math.floor(remaining / duration)
+    document.querySelector(`[data-unit="${unit}"]`).textContent = String(value).padStart(2, '0')
+    remaining -= value * duration
+  })
+}
+updateCountdown()
+window.setInterval(updateCountdown, 1000)
+
+const observer = new IntersectionObserver((entries) => entries.forEach((entry) => entry.isIntersecting && entry.target.classList.add('is-visible')), { threshold: .14 })
+document.querySelectorAll('.reveal').forEach((element) => observer.observe(element))
+
+document.querySelector('#rsvp-form').addEventListener('submit', (event) => {
+  event.preventDefault()
+  const formData = new FormData(event.currentTarget)
+  window.location.href = `mailto:?subject=RSVP for Vishnu and Divyadharshni&body=${encodeURIComponent(`${formData.get('name')} - ${formData.get('response')}`)}`
+})
 
 const celebrateButton = document.querySelector('#celebrate')
 
