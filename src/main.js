@@ -1,28 +1,45 @@
 import './style.css'
 
 document.querySelector('#app').innerHTML = `
-  <header class="site-header">
-    <a class="brand" href="/">VK<span>.</span></a>
-    <a class="header-link" href="https://github.com/VishnuKeerthan" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-  </header>
+  <main class="invitation">
+    <header class="topbar">
+      <p>With love and blessings</p>
+      <p class="monogram">V <span>&amp;</span> D</p>
+    </header>
 
-  <main>
-    <section class="intro">
-      <p class="kicker">Front-end developer <span></span> Bengaluru, India</p>
-      <h1>Building digital<br /><em>places to belong.</em></h1>
-      <p class="lede">I turn thoughtful ideas into clear, useful web experiences with a little unexpected joy.</p>
-      <a class="button" href="mailto:hello@example.com">Start a conversation <span aria-hidden="true">↗</span></a>
+    <section class="hero" aria-labelledby="invitation-title">
+      <div class="sun" aria-hidden="true"></div>
+      <p class="eyebrow">A new chapter begins</p>
+      <h1 id="invitation-title"><span>Vishnu</span><i>&amp;</i><span>Divyadharshni</span></h1>
+      <p class="hero-copy">Together with our families, we invite you to celebrate the beginning of our forever.</p>
+      <p class="hero-date">29 <small>August</small> 30 <small>2026</small></p>
     </section>
 
-    <section class="work" aria-labelledby="work-title">
-      <div class="section-heading"><p class="kicker">Selected work</p><h2 id="work-title">A few things I care about.</h2></div>
-      <div class="project-grid">
-        <article class="project project-sun"><p class="project-number">01 / 03</p><h3>Warm interfaces</h3><p>Systems that make complex things feel human.</p></article>
-        <article class="project project-blue"><p class="project-number">02 / 03</p><h3>Useful motion</h3><p>Small moments that help people find their way.</p></article>
-        <article class="project project-ink"><p class="project-number">03 / 03</p><h3>Good questions</h3><p>Starting with curiosity, ending with clarity.</p></article>
-      </div>
+    <section class="events" aria-label="Wedding events">
+      <article class="event reception">
+        <p class="event-label">The evening before</p>
+        <h2>Reception</h2>
+        <p class="event-date">Saturday, 29 August 2026</p>
+        <p class="event-time">After 6:00 PM</p>
+      </article>
+      <article class="event wedding">
+        <p class="event-label">The wedding day</p>
+        <h2>Marriage</h2>
+        <p class="event-date">Sunday, 30 August 2026</p>
+        <p class="event-time">With the blessings of our families</p>
+      </article>
     </section>
+
+    <section class="couple" aria-label="About the couple">
+      <p class="eyebrow">The couple</p>
+      <div class="names"><div><h2>Vishnu R.M</h2><p>Software Developer</p></div><span>&amp;</span><div><h2>Divyadharshni K</h2><p>BHMS Doctor</p></div></div>
+    </section>
+
+    <section class="venue" aria-labelledby="venue-title">
+      <div><p class="eyebrow">Please join us</p><h2 id="venue-title">Town Panchayat<br />Marriage Hall</h2><p>Kallidaikurichi, Tirunelveli</p></div>
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Town+Panchayat+Marriage+Hall%2C+Kallidaikurichi%2C+Tirunelveli" target="_blank" rel="noreferrer">Open in Google Maps <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <footer><p>We cannot wait to celebrate with you.</p><p>Vishnu &amp; Divyadharshni · 2026</p></footer>
   </main>
-
-  <footer><p>Made with care, curiosity, and Vanilla JS.</p><p>© 2026 Vishnu Keerthan</p></footer>
 `

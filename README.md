@@ -1,6 +1,6 @@
-# Vishnu Keerthan - GitHub Pages site
+# Vishnu and Divyadharshni - Wedding invitation
 
-A small Vite and Vanilla JavaScript personal site, published with `gh-pages`.
+A mobile-first wedding invitation built with Vite and Vanilla JavaScript.
 
 ## Local development
 
@@ -20,7 +20,7 @@ npm run preview
 
 ## Deploy to GitHub Pages
 
-The GitHub repository must be named `VishnuKeerthan.github.io`. After authenticating GitHub in your browser, run:
+The site is published from the `VishnuKeerthan/vishnurepo` repository. After making changes, run:
 
 ```bash
 git add .
@@ -29,4 +29,4 @@ git push
 npm run deploy
 ```
 
-The live site will be available at `https://VishnuKeerthan.github.io` after GitHub Pages finishes publishing the `gh-pages` branch.
+The live site is available at `https://vishnukeerthan.github.io/vishnurepo/` after GitHub Pages finishes publishing the `gh-pages` branch.
