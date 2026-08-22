@@ -74,6 +74,14 @@ footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5r
 .countdown-section .clock { position: absolute; z-index: 1; top: 50%; right: 7%; width: 235px; margin: 0; opacity: .8; transform: translateY(-50%); }
 .countdown-section .clock-center { width: 78px; height: 78px; }.countdown-section .clock-center span { font-size: .42rem; }.countdown-section .clock-center strong { font-size: .8rem; }.countdown-section .clock-unit { width: 58px; }.countdown-section .clock-unit strong { font-size: 1.5rem; }.countdown-section .clock-unit span { font-size: .4rem; }
 @media (max-width: 650px) { .countdown-section { min-height: 220px; padding: 2rem 1rem; }.countdown-section .clock { right: 50%; width: 250px; opacity: .42; transform: translate(50%, -50%); }.countdown-section h2 { font-size: 1.7rem; } }
+.countdown-section { min-height: 0; padding: 2rem 1rem; }
+.countdown-section h2 { margin: .4rem 0 1.2rem; font-family: 'Trebuchet MS', sans-serif; font-size: 1.45rem; letter-spacing: .02em; }
+.countdown-section .countdown { position: static; display: flex; align-items: baseline; justify-content: center; gap: clamp(1.4rem, 7vw, 6rem); width: auto; margin: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.countdown-section .countdown::before, .countdown-section .countdown::after, .countdown-section .clock-orbit, .countdown-section .clock-center { display: none; }
+.countdown-section .countdown div { display: flex; align-items: baseline; gap: .4rem; }
+.countdown-section .countdown strong { color: #d8f0ed; font-family: 'Trebuchet MS', sans-serif; font-size: clamp(1.45rem, 4vw, 2.4rem); font-weight: 700; }
+.countdown-section .countdown span { color: #a9d9dc; font-family: 'Trebuchet MS', sans-serif; font-size: .58rem; letter-spacing: .12em; text-transform: uppercase; }
+@media (max-width: 650px) { .countdown-section .countdown { gap: .8rem; }.countdown-section .countdown div { display: grid; gap: .2rem; text-align: center; }.countdown-section .countdown strong { font-size: 1.35rem; }.countdown-section .countdown span { font-size: .46rem; } }
 .petals span { width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle at 50% 50%, #ffd700 0 14%, transparent 15%), radial-gradient(circle at 50% 0, #d95d62 0 34%, transparent 36%), radial-gradient(circle at 100% 50%, #e98d64 0 34%, transparent 36%), radial-gradient(circle at 50% 100%, #d95d62 0 34%, transparent 36%), radial-gradient(circle at 0 50%, #e98d64 0 34%, transparent 36%); }
 :root { --forest: #0f4c5c; --sage: #a9d9dc; --terracotta: #2d8c9d; --cream: #f3fbfa; --paper: #d8f0ed; color: #164653; background: #f3fbfa; }
 body { background: linear-gradient(145deg, #f3fbfa 0%, #e5f4f2 48%, #c8e8e9 100%); }
