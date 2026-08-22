@@ -28,3 +28,16 @@ footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5r
 .sun { background: var(--paper); border-color: rgba(129, 61, 66, .45); }
 .venue { background: var(--sage); }
 @media (max-width: 650px) { .topbar > p:nth-child(2) { max-width: 130px; line-height: 1.4; text-align: center; }.events { grid-template-columns: 1fr; } }
+.invitation::before, .invitation::after { display: none; }
+.sun { top: 12%; width: min(28vw, 300px); border: 0; opacity: .2; }
+.sun::before, .sun::after, .sun span, .sun small { display: none; }
+.name-seal { max-width: 850px; font-size: clamp(3.4rem, 9.5vw, 8rem); }
+.hero { isolation: isolate; }
+@media (max-width: 650px) { .sun { width: 58vw; top: 15%; }.name-seal { font-size: clamp(2.9rem, 12.5vw, 5.5rem); } }
+.sun { top: 12%; width: min(38vw, 390px); opacity: .48; }
+.sun::before, .sun::after { display: none; }
+.name-seal { position: relative; z-index: 1; align-items: center; justify-content: center; text-align: center; }
+.name-seal .name-line { display: block; width: 100%; text-align: center; }
+.name-seal .name-line:first-child, .name-seal .name-line:last-child { transform: none; }
+.name-seal:hover .name-line, .name-seal.celebrating .name-line { transform: translateY(-2px); }
+@media (max-width: 650px) { .sun { top: 14%; width: 62vw; }.name-seal { font-size: clamp(3rem, 13vw, 5.8rem); } }
