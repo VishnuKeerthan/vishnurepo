@@ -3,32 +3,39 @@ import './style.css'
 document.querySelector('#app').innerHTML = `
   <main class="invitation">
     <header class="topbar">
+      <p class="om-mark">ॐ</p>
       <p>With love and blessings</p>
       <p class="monogram">V <span>&amp;</span> D</p>
     </header>
 
     <section class="hero" aria-labelledby="invitation-title">
       <div class="sun" aria-hidden="true"><span>30</span><small>08 · 2026</small></div>
-      <p class="eyebrow">A new chapter begins</p>
+      <p class="eyebrow">A joyful celebration</p>
       <button class="name-seal" id="celebrate" type="button" aria-label="Celebrate Vishnu and Divyadharshni">
         <span class="name-line">Vishnu</span><i>&amp;</i><span class="name-line">Divyadharshni</span>
       </button>
-      <p class="hero-copy">Together with our families, we invite you to celebrate the beginning of our forever.</p>
-      <p class="hero-date">29 <small>Reception · August</small> 30 <small>Marriage · August</small></p>
+      <p class="hero-copy">Together with our families, we seek your presence and blessings as we begin our happily ever after.</p>
+      <p class="hero-date">29 <small>August · Saturday</small> 30 <small>August · Sunday</small></p>
     </section>
 
     <section class="events" aria-label="Wedding events">
+      <article class="event betrothal">
+        <p class="event-label">Betrothal</p>
+        <h2>29.08.2026</h2>
+        <p class="event-date">Saturday</p>
+        <p class="event-time">4:30 - 6:00 PM</p>
+      </article>
       <article class="event reception">
         <p class="event-label">The evening before</p>
         <h2>Reception</h2>
-        <p class="event-date">Saturday, 29 August 2026</p>
-        <p class="event-time">After 6:00 PM</p>
+        <p class="event-date">29.08.2026 · Saturday</p>
+        <p class="event-time">6:00 PM onwards</p>
       </article>
       <article class="event wedding">
         <p class="event-label">The wedding day</p>
-        <h2>Marriage</h2>
-        <p class="event-date">Sunday, 30 August 2026</p>
-        <p class="event-time">With the blessings of our families</p>
+        <h2>Wedding</h2>
+        <p class="event-date">30.08.2026 · Sunday</p>
+        <p class="event-time">8:00 - 9:00 AM</p>
       </article>
     </section>
 
