@@ -97,6 +97,10 @@ footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5r
 .countdown-section .countdown-item strong { color: #0f4c5c; font-size: clamp(1.1rem, 3vw, 1.8rem); }
 .countdown-section .countdown-divider { display: inline; margin: 0 .45rem; color: #2d8c9d; }
 @media (max-width: 650px) { .countdown-section .countdown { font-size: .6rem; }.countdown-section .countdown-item strong { font-size: 1rem; }.countdown-section .countdown-divider { margin: 0 .2rem; } }
+.hero { padding-bottom: clamp(2.5rem, 6vw, 4.5rem); }
+.tamil-line { margin-bottom: 0; }
+.countdown-line { padding-top: .7rem; }
+@media (max-width: 650px) { .hero { padding-bottom: 2.5rem; }.countdown-line { padding-top: .5rem; } }
 .events { gap: 1rem; padding: 1.2rem 0; border: 0; }
 .event { min-height: 0; padding: 1.4rem 1rem; border: 1px solid rgba(15, 76, 92, .16); border-radius: 8px; box-shadow: 0 8px 20px rgba(15, 76, 92, .08); }
 .event + .event { border-left: 1px solid rgba(15, 76, 92, .16); }
