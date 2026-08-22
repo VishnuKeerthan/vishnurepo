@@ -89,7 +89,7 @@ document.querySelectorAll('.reveal').forEach((element) => observer.observe(eleme
 const celebrateButton = document.querySelector('#celebrate')
 
 celebrateButton.addEventListener('click', () => {
-  const colors = ['#c9775c', '#e9b949', '#a8b79d', '#8bb9c2', '#27352d']
+  const colors = ['#0f4c5c', '#2d8c9d', '#8fd3dc', '#d8f0ed', '#e4b96a']
   const confetti = document.createDocumentFragment()
 
   for (let index = 0; index < 42; index += 1) {

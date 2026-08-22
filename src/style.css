@@ -57,3 +57,16 @@ footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5r
 @keyframes fall { to { transform: translate(70px, 110vh) rotate(540deg); } } @keyframes float { 50% { transform: translateY(-10px) scale(1.05); } }
 @media (max-width: 650px) { .countdown { gap: 1rem; }.countdown strong { font-size: 2rem; }.venue { background: #ffac33; } }
 .petals span { width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle at 50% 50%, #ffd700 0 14%, transparent 15%), radial-gradient(circle at 50% 0, #d95d62 0 34%, transparent 36%), radial-gradient(circle at 100% 50%, #e98d64 0 34%, transparent 36%), radial-gradient(circle at 50% 100%, #d95d62 0 34%, transparent 36%), radial-gradient(circle at 0 50%, #e98d64 0 34%, transparent 36%); }
+:root { --forest: #0f4c5c; --sage: #a9d9dc; --terracotta: #2d8c9d; --cream: #f3fbfa; --paper: #d8f0ed; color: #164653; background: #f3fbfa; }
+body { background: linear-gradient(145deg, #f3fbfa 0%, #e5f4f2 48%, #c8e8e9 100%); }
+.topbar { border-bottom-color: rgba(15, 76, 92, .2); color: #477781; }
+.om-mark, .monogram { color: #0f4c5c; }.monogram span { color: #2d8c9d; }
+.hero { background: radial-gradient(circle at 50% 38%, rgba(216, 240, 237, .72), transparent 54%); }
+.eyebrow, .event-label { color: #1e7180; }
+.photo-wash { background: linear-gradient(135deg, rgba(243, 251, 250, .72), rgba(216, 240, 237, .52)); }
+.photo-stage .name-seal { color: #0f4c5c; }.photo-stage .name-seal i { color: #2d8c9d; }
+.ornament { color: #79bfc7; }.countdown-section { background: #0f4c5c; }.countdown-section h2, .countdown strong { color: #d8f0ed; }.countdown span { color: #a9d9dc; }
+.event { background: rgba(243, 251, 250, .88); }.event h2, .venue h2, .rsvp h2 { color: #0f4c5c; }.event-icon { color: #e4b96a; }.event-time { color: #477781; }
+.venue { background: #8fd3dc; }.map-link, .rsvp-button { color: #f3fbfa; background: #0f4c5c; }.rsvp { background: rgba(243, 251, 250, .5); }.rsvp input, .rsvp select { border-color: rgba(15, 76, 92, .3); color: #164653; background: #f3fbfa; }
+.splash { background: radial-gradient(circle at center, #2d8c9d, #0f4c5c 72%); }.splash-symbol { color: #d8f0ed; }.splash button { border-color: #d8f0ed; color: #0f4c5c; background: #d8f0ed; }
+.petals span { background: radial-gradient(circle at 50% 50%, #e4b96a 0 14%, transparent 15%), radial-gradient(circle at 50% 0, #2d8c9d 0 34%, transparent 36%), radial-gradient(circle at 100% 50%, #8fd3dc 0 34%, transparent 36%), radial-gradient(circle at 50% 100%, #2d8c9d 0 34%, transparent 36%), radial-gradient(circle at 0 50%, #8fd3dc 0 34%, transparent 36%); }
