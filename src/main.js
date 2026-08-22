@@ -26,8 +26,6 @@ document.querySelector('#app').innerHTML = `
       <p class="tamil-line">அவளும் நானும்</p>
     </section>
 
-    <section class="countdown-section reveal" id="celebration" aria-labelledby="countdown-title"><p class="eyebrow">The big day is near</p><h2 id="countdown-title">Counting down to the party</h2><p class="countdown" id="countdown"><span class="countdown-item"><strong data-unit="days">00</strong> Days</span><span class="countdown-divider">·</span><span class="countdown-item"><strong data-unit="hours">00</strong> Hours</span><span class="countdown-divider">·</span><span class="countdown-item"><strong data-unit="minutes">00</strong> Minutes</span><span class="countdown-divider">·</span><span class="countdown-item"><strong data-unit="seconds">00</strong> Seconds</span></p></section>
-
     <section class="events reveal" aria-label="Wedding events">
       <article class="event betrothal">
         <p class="event-label">Betrothal</p>
@@ -66,19 +64,6 @@ for (let index = 0; index < 14; index += 1) {
   petal.style.setProperty('--duration', `${9 + Math.random() * 7}s`)
   petals.append(petal)
 }
-
-const target = new Date('2026-08-30T08:00:00+05:30').getTime()
-const updateCountdown = () => {
-  let remaining = Math.max(0, target - Date.now())
-  const units = { days: 86400000, hours: 3600000, minutes: 60000, seconds: 1000 }
-  Object.entries(units).forEach(([unit, duration]) => {
-    const value = Math.floor(remaining / duration)
-    document.querySelector(`[data-unit="${unit}"]`).textContent = String(value).padStart(2, '0')
-    remaining -= value * duration
-  })
-}
-updateCountdown()
-window.setInterval(updateCountdown, 1000)
 
 const observer = new IntersectionObserver((entries) => entries.forEach((entry) => entry.isIntersecting && entry.target.classList.add('is-visible')), { threshold: .14 })
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element))
